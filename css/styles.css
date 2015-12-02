@@ -1,0 +1,88 @@
+/***********************
+General
+************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+  color: #082802;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 1920px;
+  max-width: 100%;
+}
+
+/***********************
+Forest gone
+************************/
+
+.forest_gone, .football-field, .deforestation {
+  background: url(../img/paper_bg.png) no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+.forest_gone img, .football-field img {
+  margin: 60px;
+}
+
+.forest_gone .text, .football-field .text {
+  margin-top: 100px;
+}
+
+.forest_gone p {
+  margin-bottom:5%;
+}
+
+.year {
+  /*
+  font-size: 4em;
+  font-weight: 800;
+  color: #39b54a;*/
+  text-align: center;
+  width: 30%;
+  margin-top: 20%;
+}
+
+/***********************
+Football-field
+************************/
+
+.alternatives
+
+/***********************
+Deforestation
+************************/
+
+.deforestation {
+  background: url(../img/wood_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.deforestation .text {
+  color: #fff;
+  margin-top: 200px;
+  text-shadow: 0px 0px 24px rgba(0, 0, 0, 1);
+  max-width: 900px;
+  text-align: center;
+}
+
+.deforestation p:first-child {
+  font-size: 6em;
+  margin-bottom: -30px;
+}
+
+.deforestation p:last-child {
+  font-size: 2em;
+}
