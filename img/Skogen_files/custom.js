@@ -40,14 +40,13 @@ for (i = 0; i < leaves.length; i++) {
 
 $(".forest_gone p").click(function() {
 
-  if ($(this).hasClass("year_2015")) {
+  if ($(this).hasClass("second-year")) {
       $(".img_skog").attr("src", "img/skog_15.png");
+      $(".first-year").css("visibility", "visible");
   }
 });
 
 /*   Football field   */
-
-//Visa om rätt eller fel svar + visa rätt svar
 
 $(".alternatives a").click(function(event) {
 
@@ -83,28 +82,10 @@ $(".alternatives a").click(function(event) {
 
 /*    Deforestation     */
 
-//slide up the section on click
+//slide up the section on scroll
 
 $(".deforestation a").click(function(event) {
   event.preventDefault();
   $(".deforestation").slideUp("slow");
   $(".preserve-forest").css("display", "block");
 });
-
-
-/*    Save trees     */
-
-// Flip pictures on mouseover
-
-function flipCards() {
-  console.log(this.firstChild);
-  var flipItem = this.firstChild;
-  flipItem.className = "flip-cards center-block flip";
-}
-
-var flipTurnItem = document.querySelectorAll(".flip_turn")
-var j;
-
-for (j = 0; j < flipTurnItem.length; j++) {
-  flipTurnItem[j].addEventListener("mouseover", flipCards);
-}

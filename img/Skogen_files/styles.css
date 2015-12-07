@@ -51,18 +51,6 @@ li {
   list-style-type: none;
 }
 
-/* centered columns styles */
-.row-centered {
-    text-align:center;
-}
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right: 5%;
-}
 
 /***********************
 Start
@@ -103,10 +91,6 @@ Love trees
   margin-right: 3%;
   width: 182px;
   height: 213px;
-}
-
-.leaves ul li, .tree_facts ul li {
-  display: inline-block;
 }
 
 .leaves li:nth-child(1) {
@@ -276,14 +260,13 @@ Save trees
 
 
 .save-trees .container {
-  width: 100%;
-  margin: 0 auto;
+  width: 1500px;
+  max-width: 100%;
 }
 
 .flip-container {
   position:relative;
   margin: 0 auto;
-
 }
 
 .flip-cards {
@@ -293,21 +276,17 @@ Save trees
     float:left;
     margin-left:5px;
     margin-right: 6%;
-    padding-right: 5%;
     -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
     transition: all 1s ease;
     -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     cursor: pointer;
 }
 
 
-.flip {
+.flip-cards:hover {
     transform: rotateY( 180deg );
     -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
 }
 
 .flip-cards div {
@@ -317,7 +296,6 @@ Save trees
     border-radius:15px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
 }
 
 .flip-cards p {
@@ -333,18 +311,19 @@ Save trees
 }
 
 .politiker p {
-    margin-top: 27%;
+    margin-top: 20%;
 }
 
-.front-card {
+.front-card
+{
     z-index: 2;
     background-image: url('../img/log.png');
 }
 
-.reverse-card {
+.reverse-card
+{
     -webkit-transform: rotateY(180deg);
     transform: rotateY( 180deg );
-    -moz-transform: rotateY(180deg);
     background-image: url('../img/log-2.png');
 }
 
@@ -395,78 +374,52 @@ Media queries
 
 @media (max-width: 1430px) {
 
-  body {
-    font-size: 3em;
+  .leaves li {
+    float:left;
+    text-align: center;
+    margin: 0;
+    margin-right: 40%;
+  }
+
+  .leaves li:nth-child(5) {
+    margin-right: 40%;
+  }
+
+  .tree_facts li {
+    float: right;
+  }
+
+  .forest_gone img, .football-field img {
+    margin: 0 auto;
+  }
+
+  .flip-cards {
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 10%;
+  }
+
+  .flip-cards div {
+
   }
 
   h2 {
     font-size: 1.1em;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-weight: 600;
     line-height: 1.5em;
   }
 
-  .btn {
-    font-size: 1em;
-  }
-
-  .leaves ul {
-    float: left;
-    width: 10%;
-    padding-left: 10%;
-  }
-
-  .tree_facts ul {
-    float: right;
-  }
-
-  .leaves ul li, .tree_facts ul li {
-    display: block;
-  }
-
-  .leaves li {
-    margin-top:10%;
-    font-size: 1em;
-  }
-
-  .tree_facts li {
-    text-align: left;
-    margin: 0;
-    width: 100%;
-  }
-
-  /*.forest_gone img, .football-field img {
-    margin: 25% auto;
-    padding-left: 5%;
-  }*/
-
-  /*.deforestation, .preserve-forest {
-    padding-left: 5%;
-  }*/
-/*
   .preserve-forest {
-    margin-top: 0;
+    min-height: 500px;
   }
 
-  .preserve-forest div {
-    margin-bottom: -15%;
-  }*/
-
-  .save-trees .container {
-    font-size: 0.8em;
-}
-
-  .flip-cards, .flip-cards div {
-    margin-bottom: 10%;
-    font-size: 1.1em;
+  .preserve-forest p {
+    font-size: 1.2em;
+    margin-top: 5%;
   }
 
-  .reverse-card p {
-    font-size: 0.9em;
-    margin-top: 27%;
-  }
-
-  .politiker p {
-    margin-top: 20%;
+  .sources .container {
+    min-height: 250px;
   }
