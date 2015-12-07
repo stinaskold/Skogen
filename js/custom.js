@@ -1,15 +1,8 @@
-// $(".forest_second").hide();
-// $(".forest_second").fadeIn(2000);
-
 /*   Start   */
 
-// // $(window).scroll(function() {
-// //  $(".start").slideUp("slow");
-// //  $(".container-fluid").slideDown("slow");
-// // });
+$(".container-fluid").hide();
 
-
-// $(".container-fluid").hide();
+// Start-sektionen går upp vid klick
 
 $(".start a, .start").click(function(event) {
  event.preventDefault();
@@ -19,30 +12,30 @@ $(".start a, .start").click(function(event) {
 
 /*   Love trees   */
 
-function showFacts(i) {
-   document.querySelector(".tree_facts").style.display = "block";
+// Lägg till fakta-paragraf vid klick på lövet.
 
-   var facts = document.querySelectorAll(".tree_facts li");
-   facts[i].style.visibility = "visible";
+function showFacts(name) {
+   document.querySelector(".tree_facts").style.display = "block";
+   document.querySelector(".tree_facts ." + name).style.visibility = "visible";
 }
 
 var leaves = document.querySelectorAll(".leaves li");
 var i;
 
 for (i = 0; i < leaves.length; i++) {
-  leaves[i].leafNr = i;
+
   leaves[i].addEventListener("click", function(){
-    showFacts(this.leafNr);
+    showFacts(this.className);
   });
 }
 
+
 /*   Forest gone   */
 
-$(".forest_gone p").click(function() {
+// Vid klick på knappen, byt ut bild
 
-  if ($(this).hasClass("year_2015")) {
-      $(".img_skog").attr("src", "img/skog_15.png");
-  }
+$(".year_2015").click(function() {
+    $(".img_skog").attr("src", "img/skog_15.png");
 });
 
 /*   Football field   */
@@ -58,7 +51,7 @@ $(".alternatives a").click(function(event) {
     var paragraph36 = $("<p>36</p>").addClass("paragraph36").hide();
 
     if ( $(this).text() == "36" ) {
-      //om rätt = om det tredje a-elementet är klickat, this === text(36)
+      //om rätt svar
         //göm knapparna
        //paragraf med texten "Rätt", append till
        //paragraf med texten "36"(fadar in)
@@ -67,7 +60,7 @@ $(".alternatives a").click(function(event) {
        $(paragraph36).fadeIn(2000);
     }
     else {
-      //om fel else
+      //om fel
         //paragraf med texten "Fel"
         //paragraf med texten "36"(fadar in)
        $(this).parent().hide();
@@ -83,7 +76,7 @@ $(".alternatives a").click(function(event) {
 
 /*    Deforestation     */
 
-//slide up the section on click
+// Sektionen går upp vid klick på knappen
 
 $(".deforestation a").click(function(event) {
   event.preventDefault();
@@ -94,7 +87,7 @@ $(".deforestation a").click(function(event) {
 
 /*    Save trees     */
 
-// Flip pictures on mouseover
+// Bilderna roterar och byter sida när pekaren hålls över dem.
 
 function flipCards() {
   console.log(this.firstChild);

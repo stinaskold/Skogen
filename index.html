@@ -10,12 +10,12 @@
   </head>
   <body>
 
-    <!-- <section class="start">
+    <section class="start">
         <h1 class="text-center">Kliv in i skogen.</h1>
         <div class="row row-centered container text-center">
-          <a href="" class="glyphicon glyphicon-menu-down"></a>
+          <a href="#" class="glyphicon glyphicon-menu-down"></a>
         </div>
-    </section> -->
+    </section>
 
     <main class="container-fluid">
 
@@ -28,21 +28,21 @@
 
           <div class="col-sm-6 col-md-12 leaves">
             <ul class="text-center">
-              <li><a href="#">1.</a></li>
-              <li><a href="#">2.</a></li>
-              <li><a href="#">3.</a></li>
-              <li><a href="#">4.</a></li>
-              <li><a href="#">5.</a></li>
+              <li class="fact1"><a href="#">1.</a></li>
+              <li class="fact2"><a href="#">2.</a></li>
+              <li class="fact3"><a href="#">3.</a></li>
+              <li class="fact4"><a href="#">4.</a></li>
+              <li class="fact5"><a href="#">5.</a></li>
             </ul>
           </div>
 
           <div class="col-sm-6 col-md-12 tree_facts">
             <ul class="text-center">
-              <li>Skogen är jordens lungor. Den renar vår luft och vårt vatten och ger oss syre.</li>
-              <li>Skogen skyddar marken mot jorderosion och bryter ned avfall och skadliga ämnen.</li>
-              <li>Skogen stabiliserar klimatet genom att binda stora mängder koldioxiod.</li>
-              <li>9 av 10 landdjur lever i skogen.</li>
-              <li>Att vara ute i skogen gör att vi mår bättre och minskar risken för sjukdomar.</li>
+              <li class="fact1">Skogen är jordens lungor. Den renar vår luft och vårt vatten och ger oss syre.</li>
+              <li class="fact2">Skogen skyddar marken mot jorderosion och bryter ned avfall och skadliga ämnen.</li>
+              <li class="fact3">Skogen stabiliserar klimatet genom att binda stora mängder koldioxid.</li>
+              <li class="fact4">9 av 10 landdjur lever i skogen.</li>
+              <li class="fact5">Att vara ute i skogen gör att vi mår bättre och minskar risken för sjukdomar.</li>
             </ul>
           </div>
         </div>
@@ -54,7 +54,7 @@
 
       <section class="forest_gone">
         <div class="row row-centered container">
-          <div class="col-sm-5"><img src="img/skog_65.png" class="img_skog img-responsive"></div>
+          <div class="col-sm-5"><img src="img/skog_65.png" class="img_skog img-responsive" alt="Skog"></div>
           <div class="text col-sm-5 col-sm-offset-1">
           <p>Ungefär hälften av jordens ursprungliga skogar har försvunnit.</p>
           <p class="forest_second">Det mesta har skett under de senaste 50 åren.</p>
@@ -65,7 +65,7 @@
 
       <section class="football-field">
         <div class="row row-centered container">
-          <div class="col-sm-5"><img src="img/football-field.png" class="img-responsive"></div>
+          <div class="col-sm-5"><img src="img/football-field.png" class="img-responsive" alt="Fotbollsplan"></div>
           <div class="text col-sm-5 col-sm-offset-1">
             <p>Hur många fotbollsplaner med träd huggs ner varje minut?</p>
             <div class="alternatives text-center">
@@ -99,39 +99,42 @@
         <div class="row row-centered">
           <h2 class="text-center">Vad kan du göra för att rädda träd?</h2>
         </div>
+        <div class="row row-centered">
+        <h3>(Håll pekaren över bilderna för mer info.)</h3>
+        </div>
         <div class="row row-centered container center-block flip-container">
           <div class="flip_turn col-centered"><div class="flip-cards center-block">
-              <div class="col-md-3 col-xs-6 front-card">
+              <div class="col-xs-6 col-lg-3 front-card">
                 <p>Återvinn papper</p>
               </div>
-              <div class="col-md-3 col-xs-6 reverse-card">
-                <p>Lämna allt papper till återvinningen och köp återvunna produkter.</p>
+              <div class="col-xs-6 col-lg-3 reverse-card">
+                <p>Lämna allt papper till återvinningen och köp återvunna produkter.</p>
               </div>
           </div>
           </div>
           <div class="flip_turn col-centered"><div class="flip-cards center-block">
-              <div class="col-md-3 col-xs-6 front-card">
+              <div class="col-xs-6 col-lg-3 front-card">
                 <p>Använd mindre papper</p>
               </div>
-              <div class="col-md-3 col-xs-6 reverse-card">
-                <p>Skriv inte ut i onödan, tacka nej till reklam i brevlådan.</p>
+              <div class="col-xs-6 col-lg-3 reverse-card">
+                <p>Skriv inte ut i onödan, tacka nej till reklam i brevlådan.</p>
               </div>
           </div>
           </div>
           <div class="flip_turn col-centered"><div class="flip-cards center-block">
-              <div class="col-md-3 col-xs-6 front-card">
+              <div class="col-xs-6 col-lg-3 front-card">
                 <p>Plantera träd</p>
               </div>
-              <div class="col-md-3 col-xs-6 reverse-card">
-                <p>Plantera träd själv eller stötta en organisation som gör det.</p>
+              <div class="col-xs-6 col-lg-3 reverse-card">
+                <p>Plantera träd själv eller stötta en organisation som gör det.</p>
               </div>
           </div>
           </div>
-          <div class="flip_turn col-centered"><div class="flip-cards center-block">
-            <div class="col-md-3 col-xs-6 front-card">
+          <div class="flip_turn col-centered"><div class="flip-cards center-block" id="lastCard">
+            <div class="col-xs-6 col-lg-3 front-card">
               <p>Pressa politiker och företag</p>
             </div>
-            <div class="col-md-3 col-xs-6 reverse-card politiker">
+            <div class="col-xs-6 col-lg-3 reverse-card politiker">
               <p>Skriv till en politiker, säg till i affären att du vill ha hållbara produkter.</p>
             </div>
           </div>

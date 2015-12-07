@@ -8,6 +8,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 2.5em;
   color: #082802;
+  background: url(../img/ricepaper2.png) repeat;
 }
 
 .container-fluid {
@@ -23,8 +24,6 @@ body {
 }
 
 section {
-  background: url(../img/paper_bg.png) no-repeat;
-  background-size: cover;
   margin: 0 auto;
   padding-bottom: 5%;
 }
@@ -35,6 +34,7 @@ h1 {
   margin-top: 0;
   padding-top: 20%;
   color: #fff;
+  cursor: pointer;
 }
 
 h2 {
@@ -63,6 +63,11 @@ li {
     /* inline-block space fix */
     margin-right: 5%;
 }
+
+.col-centered:last-child {
+  margin-right: 0;
+}
+
 
 /***********************
 Start
@@ -157,9 +162,6 @@ Love trees
 }
 
 
-
-
-
 /***********************
 Forest gone, football-field
 ************************/
@@ -205,6 +207,10 @@ Football-field
 .alternatives a {
   width: 20%;
   margin-right: 1%;
+}
+
+.answer {
+  margin-top:5%;
 }
 
 .answer, .paragraph36 {
@@ -280,6 +286,13 @@ Save trees
   margin: 0 auto;
 }
 
+.save-trees h3 {
+  font-size: 0.75em;
+  font-weight: 300;
+  margin-top: -4%;
+  margin-bottom: 5%;
+}
+
 .flip-container {
   position:relative;
   margin: 0 auto;
@@ -321,7 +334,7 @@ Save trees
 }
 
 .flip-cards p {
-    margin-top: 45%;
+    margin-top: 42%;
     color: #fff;
     font-weight: 600;
     text-align: center;
@@ -333,12 +346,13 @@ Save trees
 }
 
 .politiker p {
-    margin-top: 27%;
+    margin-top: 25%;
 }
 
 .front-card {
     z-index: 2;
     background-image: url('../img/log.png');
+    font-size: 1.1em;
 }
 
 .reverse-card {
@@ -346,6 +360,7 @@ Save trees
     transform: rotateY( 180deg );
     -moz-transform: rotateY(180deg);
     background-image: url('../img/log-2.png');
+    font-size: 1em;
 }
 
 
@@ -393,7 +408,7 @@ Sources
 Media queries
 ************************/
 
-@media (max-width: 1430px) {
+@media (max-width: 1200px) {
 
   body {
     font-size: 3em;
@@ -407,8 +422,8 @@ Media queries
     line-height: 1.5em;
   }
 
-  .btn {
-    font-size: 1em;
+  .col-centered {
+    margin-right: 1%;
   }
 
   .leaves ul {
@@ -436,26 +451,13 @@ Media queries
     width: 100%;
   }
 
-  /*.forest_gone img, .football-field img {
-    margin: 25% auto;
-    padding-left: 5%;
-  }*/
-
-  /*.deforestation, .preserve-forest {
-    padding-left: 5%;
-  }*/
-/*
-  .preserve-forest {
-    margin-top: 0;
+  .forest_gone .text, .football-field .text {
+    margin-top: 3%;
   }
-
-  .preserve-forest div {
-    margin-bottom: -15%;
-  }*/
 
   .save-trees .container {
     font-size: 0.8em;
-}
+  }
 
   .flip-cards, .flip-cards div {
     margin-bottom: 10%;
@@ -470,3 +472,16 @@ Media queries
   .politiker p {
     margin-top: 20%;
   }
+
+}
+
+@media (max-width: 845px) {
+
+  .btn {
+      font-size: 1em;
+  }
+
+  .col-centered:nth-child(2) {
+      margin-right: 0;
+  }
+}
